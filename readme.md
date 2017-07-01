@@ -1,4 +1,4 @@
-# Authentication system using Node, Mongo, React, Redux
+# Authentication and order system using Node, Mongo, React, Redux
 
 ## Features
 
