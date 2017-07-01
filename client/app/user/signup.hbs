@@ -1,0 +1,34 @@
+<div>
+  <h1>Create account</h1>
+
+  <script>
+    function check_pass () {
+      if (document.getElementById('password').value === document.getElementById('password2').value) {
+        document.getElementById('message').innerHTML = "Matched";
+        document.getElementById('submit').disabled = false;
+      } else {
+        document.getElementById('message').innerHTML = "Not matched";
+        document.getElementById('submit').disabled = true;
+      }
+    }
+  </script>
+
+  <form action="/local-reg" method="post">
+    <div>
+      <label>Username:</label>
+      <input type="text" name="username"/>
+    </div>
+    <div>
+      <label>Password:</label>
+      <input type="password" name="password" id="password" onchange='check_pass();'/>
+    </div>
+    <div>
+      <label>Password again:</label>
+      <input type="password" name="password2" id="password2" onchange='check_pass();'/>
+      <span id='message'></span>
+   </div>
+    <div>
+      <input type="submit" name="submit" id="submit" class="btn btn-primary btn-sm" value="Register" disabled/>
+    </div>
+  </form>
+</div>
