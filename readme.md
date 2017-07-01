@@ -4,6 +4,8 @@
 
 - Signin, Signup, Email verification, Password reset
 - Client side forms validation
+- Order system
+- Mock server api
 
 
 
